@@ -2,40 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
 
-    h1 {
-      color: #333;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
 
-    p {
-      margin: 20px;
-    }
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+            text-align: center;
+        }
 
-    a {
-      color: #007BFF;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+        nav a {
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-listing {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .car {
+            flex: 0 0 calc(33.33% - 20px);
+            background-color: #eee;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Welcome to the Creative Home Page</h1>
-  <p>This is the main page content. Explore and enjoy the creative journey!</p>
-  <p><a href="page02.html">Go to Page 2</a></p>
-  <p><a href="page03.html">Go to Page 3</a></p>
+    <header>
+        <h1>Harsha Car Dealership</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page1.html">INSTRUCTIONS</a>
+        <a href="page2.html">REGISTRATION</a>
+    </nav>
+
+    <main>
+        <h2>Featured Cars</h2>
+        <div class="car-listing">
+            <div class="car">
+                <h3>Car Model 1</h3>
+                <p>Year: 2022</p>
+                <p>Price: $30,000</p>
+                <img src="car1.jpg" alt="Car Model 1">
+            </div>
+
+            <div class="car">
+                <h3>Car Model 2</h3>
+                <p>Year: 2023</p>
+                <p>Price: $35,000</p>
+                <img src="car2.jpg" alt="Car Model 2">
+            </div>
+
+            <div class="car">
+                <h3>Car Model 3</h3>
+                <p>Year: 2021</p>
+                <p>Price: $28,000</p>
+                <img src="car3.jpg" alt="Car Model 3">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 XYZ Car Dealership. All rights reserved.
+    </footer>
 </body>
 
 </html>
